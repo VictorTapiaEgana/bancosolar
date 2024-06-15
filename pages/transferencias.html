@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.1/css/bulma.css" 
+          integrity="sha512-xaOMJEeBE8bPRO0xztsWjEkhe1soyGCTclkIzqV/UdMD7HwpLqCmlFWXRzB2uLxeCbqeR2gZFOJR6e6uGQdtwg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Banco solar C.A</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">       
+      
+      <div id="navbarBasicExample" class="navbar-menu">        
+
+        <a class="navbar-item" href="/">
+            <img id="logobanco" src="/public/images/logo.png" alt="Logo Banco">
+            Banco Solar C.A
+          </a>
+
+          <div id="itembars">
+            <a class="navbar-item" href="./usuarios.html">
+                Usuarios
+              </a>
+        
+              <a class="navbar-item" href="./transferencias.html">
+                Transferencias
+              </a>
+          </div>          
+        
+      </div>
+
+    </nav>  
+
+    <main class="container">
+        <!-- form -->
+        <div class="column has-text-centered">
+          <nav class="panel">
+            <p class="panel-heading">Realizar una Transferencias</p>
+               <small id="errorTransferencia"></small>
+               <div class="panel-block">
+
+                  <div class="field fieldSelect">
+                    <label class="label">Emisor</label>
+                    <div class="control">
+                      <div class="select">
+                        <select id="selectEmisor">                          
+                        </select>     
+                              <small>*Quien transfiere dinero</small>                              
+                      </div> 
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="field fieldSelect">
+                    <label class="label">Receptor</label>
+                    <div class="control">
+                      <div class="select">
+                        <select id="selectReceptor">
+                        </select>     
+                              <small>*Quien recibe el dinero</small>                              
+                      </div>   
+                      
+                    </div>
+                  </div>    
+                  
+                  <div id="" class="field">                  
+                        <label class="label">Monto</label>    
+                        <div class="control">                    
+                            <input class="input" type="text" placeholder="monto a transfeir" id="montaT" name="">
+                            <small>*Cantidad a Transferir</small>                      
+                        </div>
+                  </div>    
+
+                  <div class="field">
+                     <div class="control">
+                         <button id="btnTransferencia" class="button is-link is-outlined is-fullwidth">Realizar transferencia</button>                         
+                         <small>&nbsp;</small>                    
+                     </div>                             
+                  </div>
+
+               </div>
+
+        </nav>
+        </div>
+
+        <!-- table -->
+        <table class="table is-striped is-fullwidth is-size-7 is-dark">
+          <thead>
+            <tr>
+                <th class="px-6 py-3 has-text-grey has-text-centered">Numero Transferencia</th>
+                <th class="px-6 py-3 has-text-grey has-text-centered">Fecha</th>
+                <th class="px-6 py-3 has-text-grey has-text-centered">Emisor</th>
+                <th class="px-6 py-3 has-text-grey has-text-centered">Receptor</th>
+                <th class="px-6 py-3 has-text-grey has-text-centered">Monto</th>              
+                
+          </thead>
+          <tbody id="tbody_transferencias">
+            
+          </tbody>
+        </table>
+
+    </main>    
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <button class="button">
+                <span class="icon">
+                  <i class="fa fa-github" style="font-size:34px"></i>
+                </span>
+                <a href="https://github.com/VictorTapiaEgana" target="_blank">GitHub</a>
+            </button>
+          </p>
+        </div>
+      </footer>
+
+      <script src="/public/scripts/scriptTransferencias.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+#navbarBasicExample{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    background-color: #f9fafb;
+}
+
+#itembars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logomain{
+    width: 600px;
+}
+
+.field{
+    width: 100%;    
+    margin-right: 30px;
+    text-align: left;
+}
+
+#btnAgregar{
+    position: relative;
+    top: 10px;
+}
+
+small{    
+    color: rgb(170, 162, 162);   
+}
+
+.table{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+                rgba(0, 0, 0, 0.07) 0px 2px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 4px,
+                rgba(0, 0, 0, 0.07) 0px 8px 8px,
+                rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.balance{
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    font-weight: 600;        
+}
+
+#errorCliente{
+    color: red;
+}
+
+.iconoCliente{
+    border-radius: 50%;
+}
+
+#btnEditar{
+    display: none;
+    position: relative;
+    top: 10px;
+}
+
+#campoGenero{
+    position: relative;
+    top: -12px;
+}
+
+#SectionModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap :50px;
+
+    & img{
+        border-radius: 20px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+}
+
+#eliminarRegistro{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.fieldSelect{
+    position: relative;
+    top: -10px;
+}
+
+#errorTransferencia{
+    color: red;
+}

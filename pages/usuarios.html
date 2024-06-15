@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.1/css/bulma.css" 
+          integrity="sha512-xaOMJEeBE8bPRO0xztsWjEkhe1soyGCTclkIzqV/UdMD7HwpLqCmlFWXRzB2uLxeCbqeR2gZFOJR6e6uGQdtwg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Banco solar C.A</title>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">       
+      
+      <div id="navbarBasicExample" class="navbar-menu">        
+
+        <a class="navbar-item" href="/">
+            <img id="logobanco" src="/public/images/logo.png" alt="Logo Banco">
+            Banco Solar C.A
+          </a>
+
+          <div id="itembars">
+            <a class="navbar-item" href="./usuarios.html">
+                Usuarios
+              </a>
+        
+              <a class="navbar-item" href="./transferencias.html">
+                Transferencias
+              </a>
+          </div>          
+        
+      </div>
+
+      
+
+    </nav>  
+
+    <main class="container">
+        <!-- form -->
+      <div class="column has-text-centered">
+            <nav class="panel">
+                <p class="panel-heading">Crear nuevo cliente</p>
+                   <small id="errorCliente"></small>
+                   <div class="panel-block">
+
+                      <div class="field">
+                        <label class="label">Nombre</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Nombre del cliente" id="nombreCliente" name="nombreCliente" >
+                          <small>* Nombre y Apellido</small>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Balance</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Balance inicial" id="balanceCliente" name="balanceCliente">
+                          <small>* Ingrese solo numeros</small>
+                        </div>
+                      </div>    
+                      
+                      <div id="campoGenero" class="field">
+                        <label class="label">Género</label>                        
+                          <div class="select">
+                            <select id="select">
+                              <option> Seleccion Género </option>
+                              <option> Masculino </option>
+                              <option> Femenino </option>
+                            </select>     
+                                  <small>*Seleccion su sexo</small>                              
+                          </div>   
+                      </div>    
+
+                      <div class="field">
+                         <div class="control">
+                             <button id="btnAgregar" class="button is-link is-outlined is-fullwidth">Crear Cliente</button>
+                             <button id="btnEditar" class="button is-success is-outlined is-fullwidth ">Editar Cliente</button> 
+                             <small>&nbsp;</small>                    
+                         </div>                             
+                      </div>
+
+                   </div>
+
+            </nav>
+           
+      </div>
+
+      <!-- table -->
+      <table class="table is-striped is-fullwidth is-size-7 is-dark">
+        <thead class="">
+          <tr >
+              <th class="px-6 py-3 has-text-grey has-text-centered">ID Cliente</th>
+              <th class="px-6 py-3 has-text-grey has-text-centered">Nombre</th>
+              <th class="px-6 py-3 has-text-grey has-text-centered">Fecha Inscripción</th>
+              <th class="px-6 py-3 has-text-grey has-text-centered">Balance</th>              
+              <th class="px-6 py-3 has-text-grey has-text-centered">Opciones</th></tr>
+        </thead>
+        <tbody id="tbody">
+          
+        </tbody>
+      </table>  
+     
+    <!-- modal -->
+
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        
+        <header class="modal-card-head">
+          <p class="modal-card-title">Banco Solar C.A</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+
+        <section id="BodyModal" class="modal-card-body">       
+
+
+        </section>
+             
+        <footer class="modal-card-foot">
+          <div class="buttons">
+            <button id ="btnEliminarCliente" class="button is-danger">Eliminar registro</button>
+            <button class="button is-sucess">Cancelar</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    </main>    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <button class="button">
+                <span class="icon">
+                  <i class="fa fa-github" style="font-size:34px"></i>
+                </span>
+                <a href="https://github.com/VictorTapiaEgana" target="_blank">GitHub</a>
+            </button>
+          </p>
+        </div>
+      </footer>
+
+      <script src="/public/scripts/script.js"></script>
+</body>
+</html>

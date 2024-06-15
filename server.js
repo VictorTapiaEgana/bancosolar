@@ -1,12 +1,12 @@
 const listado = require('./functions/usuarios');
 const CrearUsuario = require('./functions/crearusuario');
 const EditarCliente = require('./functions/EditarCliente');
-
-const express  = require('express'); 
-const path = require('path');
 const EliminarCliente = require('./functions/EliminarCliente');
 const crearTransferencia = require('./functions/crearTransferencia');
 const transferencias = require('./functions/transferencias');
+
+const express  = require('express'); 
+const path = require('path');
 
 const PORT= process.env.SERVER_PORT || 3002;
 const app = express();

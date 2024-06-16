@@ -1,7 +1,7 @@
 
 # Banco Solar CA
 
- Aplicación web que conta de un mantendor de usuarios ( crear, editar, eliminar), y un gestor de transferencias que permite mientras tengan saldo las cuentas girar dinero entre ellas, esto manejado desde un API RESTful con node conectado a un base de datos postgres.
+ Aplicación web que consta de un mantendor de usuarios ( crear, editar, eliminar y lee), y un gestor de transferencias que permite mientras tengan saldo las cuentas girar dinero entre ellas, esto manejado desde un API RESTful con node conectado a un base de datos postgres.
 
 
 
@@ -128,4 +128,5 @@ DB_USER='postgres'
 DB_PASS= TU CONTRASEÑA
 DB_PORT=5432
 DB_HOST='localhost'
+
 ```

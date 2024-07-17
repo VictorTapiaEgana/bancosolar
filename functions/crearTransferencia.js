@@ -30,7 +30,7 @@ async function crearTransferencia (Emisor, Receptor, Monto){
     } catch (error) {
         
         client.query('ROLLBACK')
-        // console.log(`X Error al conectar a la base de datos : `, error);
+        
         if(error.constraint){
             return 'sin saldo';
         }        

@@ -1,5 +1,5 @@
 
-# Aplicacion Fullstack con Handrlebars y Postgress
+# Aplicacion Fullstack con Handlebars y Postgress
 
  Aplicación web que consta de un mantendor de usuarios ( crear, editar, eliminar y lee), y un gestor de transferencias que permite mientras tengan saldo las cuentas girar dinero entre ellas, esto manejado desde un API RESTful con node conectado a un base de datos postgres.
 

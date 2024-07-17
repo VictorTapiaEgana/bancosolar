@@ -130,3 +130,19 @@ DB_PORT=5432
 DB_HOST='localhost'
 
 ```
+
+## Listado de transferencias realizadas
+
+![](https://raw.githubusercontent.com/VictorTapiaEgana/bancosolar/master/github/transferencias.png)
+
+## Creacion de cliente y saldo inicial
+
+![](https://raw.githubusercontent.com/VictorTapiaEgana/bancosolar/master/github/usuarios.png)
+
+## Eliminar registro
+
+![](https://raw.githubusercontent.com/VictorTapiaEgana/bancosolar/master/github/eliminar.png)
+
+
+
+
